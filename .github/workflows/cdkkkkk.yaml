@@ -1,7 +1,7 @@
 # .github/workflows/cd.yaml
 # This workflow defines the Continuous Deployment (CD) process.
 
-name: CD Workflow - Build and Push Docker Image
+name: CD Workflow
 
 # 1. Trigger: This workflow runs only on pushes to the 'main' branch.
 # This means it will execute after a PR is merged into 'main'.
@@ -15,9 +15,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-
-# Define the job to build 
-
 
 # 3. Job: Define the deployment job.
 jobs:
